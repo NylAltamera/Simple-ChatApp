@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins';
+    background-color: #000000e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 480px;
+    height: 750px;
+    position: relative;
+    background-image: url(assets/bg.jpg);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.712);
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #edbc9cbc;
+    color: #6b4a25;
+    box-shadow: 0 4px 4px rgba(90, 54, 7, 0.374);
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: large;
+}
+
+.profile-icons .icon {
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #6b4a25;
+}
+
+.chat-box {
+    position: absolute;
+    top: 60px;
+    bottom: 50px;
+    right: 10px;
+    left: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-end;
+}
+
+.message {
+    clear: both;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.sent {
+    background-color: #6b4a25e7;
+    color: #fff;
+    float: right;
+}
+
+.input-container {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #edbc9cbc;
+    border-top: 1px solid #6b4a2567;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-family: 'Poppins';
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #6b4a25;
+    border-radius: 4px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: #6b4a25;
+}
+
+button {
+    font-family: 'Poppins';
+    padding: 8px 16px;
+    background-color: #6b4a25;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+button:hover {
+    background-color: #462d10;
+}

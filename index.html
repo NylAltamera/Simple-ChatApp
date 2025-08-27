@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple ChatApp</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <i class='bx bx-arrow-back'></i>
+                <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+
+                <div class="profile-info">
+                    <span class="profile-name">DoDong the Bee</span>
+                    <div class="profile-icons">
+                        <i class='bx bxs-phone-call icon'></i>
+                        <i class='bx bxs-video icon'></i>
+                        <i class='bx bxs-cog icon'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-box" id="chat-box">
+            </div>
+
+            <div class="input-container">
+                <i class='bx bx-refresh icon' onclick="refreshChat()"></i>
+                <input type="text" id="messageInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <script src="chatapp.js"></script>
+    </body>
+</html>
