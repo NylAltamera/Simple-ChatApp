@@ -1,8 +1,9 @@
 # Simple ChatApp
 A lightweight chat interface that allows users to send messages and refresh to view them, with a simple styled layout using pure CSS.
 
+![image alt](https://github.com/NylAltamera/Simple-ChatApp/blob/eebce91ad306bf4010e606f81fcf1f5b78931397/chatapp_ui.png)
 
-# Overview
+## Overview
 This project demonstrates a basic chat interface UI using vanilla web technologies. It is designed as a frontend-only and no backend or database is included. Messages reset when the page is refreshed.
 
 # Features
